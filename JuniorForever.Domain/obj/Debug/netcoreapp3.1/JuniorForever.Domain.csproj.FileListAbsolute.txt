@@ -1,0 +1,8 @@
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Domain\bin\Debug\netcoreapp3.1\JuniorForever.Domain.deps.json
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Domain\bin\Debug\netcoreapp3.1\JuniorForever.Domain.dll
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Domain\bin\Debug\netcoreapp3.1\JuniorForever.Domain.pdb
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.csprojAssemblyReference.cache
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.AssemblyInfoInputs.cache
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.AssemblyInfo.cs
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.dll
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.pdb

@@ -1,0 +1,11 @@
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.deps.json
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.dll
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.pdb
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Domain.dll
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Domain.pdb
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.csprojAssemblyReference.cache
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.AssemblyInfoInputs.cache
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.AssemblyInfo.cs
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.csproj.CopyComplete
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.dll
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.pdb
