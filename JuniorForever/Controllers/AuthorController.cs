@@ -25,7 +25,7 @@ namespace JuniorForever.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok("opa, foi!");
+            return Ok("opa, foi! De novo?");
         }
 
         [HttpPut]
