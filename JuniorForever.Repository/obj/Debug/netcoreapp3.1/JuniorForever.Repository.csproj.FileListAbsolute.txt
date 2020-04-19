@@ -9,3 +9,5 @@ C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\Junior
 C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.csproj.CopyComplete
 C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.dll
 C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.pdb
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.runtimeconfig.json
+C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.runtimeconfig.dev.json
