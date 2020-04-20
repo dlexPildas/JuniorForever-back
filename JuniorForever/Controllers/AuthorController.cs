@@ -80,7 +80,7 @@ namespace JuniorForever.Controllers
 
                 if (existAuthor == null)
                 {
-                    return StatusCode(StatusCodes.Status404NotFound, "O autor não foi encontrado");
+                    return StatusCode(StatusCodes.Status404NotFound, $"O autor  não foi encontrado");
                 }
 
                 authorRepository.Update(author);
