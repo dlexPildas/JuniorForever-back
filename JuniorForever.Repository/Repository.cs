@@ -7,7 +7,7 @@ using JuniorForever.Repository.Data;
 
 namespace JuniorForever.Repository
 {
-    class Repository : IRepository
+    public class Repository : IRepository
     {
 
         private readonly DataContext dataContext;
@@ -32,7 +32,7 @@ namespace JuniorForever.Repository
             dataContext.Remove(entity);
         }
 
-        public async Task<bool> SaveChangesAsync<T>(T entity) where T : class
+        public async Task<bool> SaveChangesAsync()
         {
             return (await dataContext.SaveChangesAsync()) > 0;
         }

@@ -4,7 +4,7 @@ using JuniorForever.Domain.Models;
 
 namespace JuniorForever.Domain.Interfaces
 {
-    public interface IAuthorRepository
+    public interface IAuthorRepository : IRepository
     {
         Task<Author[]> GetAllAuthorsAsync();
         Task<Author[]> GetbyNameAsync(string name);

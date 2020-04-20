@@ -1,33 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using JuniorForever.Domain.Interfaces;
 using JuniorForever.Domain.Models;
 using JuniorForever.Repository.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace JuniorForever.Repository
 {
-    class AuthorRepository : Repository, IAuthorRepository
-    {
+    public class AuthorRepository : Repository, IAuthorRepository
+    { 
+
+        private readonly DataContext dataContext;
 
         public AuthorRepository(DataContext dataContext) : base(dataContext)
         {
+            this.dataContext = dataContext;
         }
 
-        public Task<Author[]> GetAllAuthorsAsync()
+        public async Task<Author[]> GetAllAuthorsAsync()
         {
-            throw new NotImplementedException();
+            IQueryable<Author> query = dataContext.Authors
+                .OrderBy(x => x.Name);
+              
+            return await query.ToArrayAsync();
         }
 
-        public Task<Author[]> GetbyNameAsync(string name)
+        public async Task<Author[]> GetbyNameAsync(string name)
         {
-            throw new NotImplementedException();
+            IQueryable<Author> query = dataContext.Authors
+                .Where(x => x.Name.Contains(name));
+
+            var result = await query.ToArrayAsync();
+
+            return result;
         }
 
-        public Task<Author> GetbyIdAsync(int id)
+        public async Task<Author> GetbyIdAsync(int id)
         {
-            throw new NotImplementedException();
+            IQueryable<Author> query = dataContext.Authors;
+
+            return await query.FirstOrDefaultAsync(x => x.Id == id);
         }
     }
 }

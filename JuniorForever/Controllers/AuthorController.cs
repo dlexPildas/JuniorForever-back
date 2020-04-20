@@ -1,7 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
+using JuniorForever.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using  JuniorForever.Domain.Models;
-using  JuniorForever.Repository.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace JuniorForever.Controllers
 {
@@ -9,35 +11,113 @@ namespace JuniorForever.Controllers
     [ApiController]
     public class AuthorController : ControllerBase
     {
-        private readonly DataContext _dataContext;
+        private readonly IAuthorRepository authorRepository;
 
-        public AuthorController(DataContext dataContext)
+        public AuthorController(IAuthorRepository authorRepository)
         {
-            _dataContext = dataContext;
+            this.authorRepository = authorRepository;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post()
+        public async Task<IActionResult> Post(Author author)
         {
-            return Ok();
+            try
+            {
+                authorRepository.Add(author);
+
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"{e.Message}");
+            }
+            
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(string filter)
         {
-            return Ok("opa, foi! De novo?");
+            try
+            {
+                if (filter == null)
+                {
+                    var result = await authorRepository.GetAllAuthorsAsync();
+                    return Ok(result);
+                }
+
+                var result2 = await authorRepository.GetbyNameAsync(filter);
+
+                return Ok(result2);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            try
+            {
+                var result = await authorRepository.GetbyIdAsync(id);
+                
+                return Ok(result);
+
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
         }
 
         [HttpPut]
-        public async Task<IActionResult> Put()
+        public async Task<IActionResult> Put(Author author)
         {
-            return Ok();
+            try
+            {
+                var existAuthor = await authorRepository.GetbyIdAsync(author.Id);
+
+                if (existAuthor == null)
+                {
+                    return StatusCode(StatusCodes.Status404NotFound, "O autor não foi encontrado");
+                }
+
+                authorRepository.Update(author);
+
+                await authorRepository.SaveChangesAsync();
+
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+            
         }
 
         [HttpDelete]
-        public async Task<IActionResult> Delete()
+        public async Task<IActionResult> Delete(Author author)
         {
-            return Ok();
+            try
+            {
+                var existAuthor = await authorRepository.GetbyIdAsync(author.Id);
+
+                if (existAuthor == null)
+                {
+                    return StatusCode(StatusCodes.Status404NotFound, "O autor não foi encontrado");
+                }
+
+                authorRepository.Delete(author);
+
+                await authorRepository.SaveChangesAsync();
+
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
         }
     }
 }
