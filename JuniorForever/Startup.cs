@@ -1,4 +1,4 @@
-using JuniorForever.Domain.Business;
+using FluentValidation.AspNetCore;
 using JuniorForever.Domain.Interfaces;
 using JuniorForever.Repository;
 using JuniorForever.Repository.Data;
@@ -23,12 +23,17 @@ namespace JuniorForever
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(options =>
+                {
+                    options.RegisterValidatorsFromAssemblyContaining<Startup>();
+                }); ;
             services.AddDbContext<DataContext>(
                 x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
             );
             services.AddScoped<IRepository, Repository.Repository>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Repository\\JuniorForever.Repository.csproj": {}
+    "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Repository\\JuniorForever.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\JuniorForever.Domain.csproj": {
+    "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\JuniorForever.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\JuniorForever.Domain.csproj",
+        "projectUniqueName": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\JuniorForever.Domain.csproj",
         "projectName": "JuniorForever.Domain",
-        "projectPath": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\JuniorForever.Domain.csproj",
+        "projectPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\JuniorForever.Domain.csproj",
         "packagesPath": "C:\\Users\\daniel.lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\obj\\",
+        "outputPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\daniel.lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Repository\\JuniorForever.Repository.csproj": {
+    "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Repository\\JuniorForever.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Repository\\JuniorForever.Repository.csproj",
+        "projectUniqueName": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Repository\\JuniorForever.Repository.csproj",
         "projectName": "JuniorForever.Repository",
-        "projectPath": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Repository\\JuniorForever.Repository.csproj",
+        "projectPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Repository\\JuniorForever.Repository.csproj",
         "packagesPath": "C:\\Users\\daniel.lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Repository\\obj\\",
+        "outputPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\daniel.lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\JuniorForever.Domain.csproj": {
-                "projectPath": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\JuniorForever.Domain.csproj"
+              "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\JuniorForever.Domain.csproj": {
+                "projectPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\JuniorForever.Domain.csproj"
               }
             }
           }

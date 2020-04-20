@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\JuniorForever.Domain.csproj": {}
+    "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\JuniorForever.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\JuniorForever.Domain.csproj": {
+    "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\JuniorForever.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\JuniorForever.Domain.csproj",
+        "projectUniqueName": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\JuniorForever.Domain.csproj",
         "projectName": "JuniorForever.Domain",
-        "projectPath": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\JuniorForever.Domain.csproj",
+        "projectPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\JuniorForever.Domain.csproj",
         "packagesPath": "C:\\Users\\daniel.lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daniel.lima\\Documents\\Estudos\\Project Blog JuniorForever\\BackEnd\\JuniorForever\\JuniorForever.Domain\\obj\\",
+        "outputPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\daniel.lima\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -11,3 +11,16 @@ C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\Junior
 C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.pdb
 C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.runtimeconfig.json
 C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.runtimeconfig.dev.json
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.deps.json
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.runtimeconfig.json
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.runtimeconfig.dev.json
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.dll
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Repository.pdb
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Domain.dll
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\bin\Debug\netcoreapp3.1\JuniorForever.Domain.pdb
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.csprojAssemblyReference.cache
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.AssemblyInfoInputs.cache
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.AssemblyInfo.cs
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.csproj.CopyComplete
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.dll
+C:\JuniorForever\JuniorForever-back\JuniorForever.Repository\obj\Debug\netcoreapp3.1\JuniorForever.Repository.pdb
