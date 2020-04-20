@@ -7,7 +7,8 @@ namespace JuniorForever.Domain.Interfaces
     public interface IAuthorRepository : IRepository
     {
         Task<Author[]> GetAllAuthorsAsync();
-        Task<Author[]> GetbyNameAsync(string name);
-        Task<Author> GetbyIdAsync(int id);
+        Task<Author[]> GetAuthorsByNameAsync(string name);
+        Task<Author> GetAuthorByIdAsync(int id);
+        Task<bool> ExistAuthorByName(string name);
     }
 }

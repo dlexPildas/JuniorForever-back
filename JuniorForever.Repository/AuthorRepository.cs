@@ -26,7 +26,7 @@ namespace JuniorForever.Repository
             return await query.ToArrayAsync();
         }
 
-        public async Task<Author[]> GetbyNameAsync(string name)
+        public async Task<Author[]> GetAuthorsByNameAsync(string name)
         {
             IQueryable<Author> query = dataContext.Authors
                 .Where(x => x.Name.Contains(name));
@@ -36,11 +36,18 @@ namespace JuniorForever.Repository
             return result;
         }
 
-        public async Task<Author> GetbyIdAsync(int id)
+        public async Task<Author> GetAuthorByIdAsync(int id)
         {
             IQueryable<Author> query = dataContext.Authors;
 
             return await query.FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<bool> ExistAuthorByName(string name)
+        {
+            IQueryable<Author> query = dataContext.Authors;
+
+            return await query.AnyAsync(x => x.Name == name);
         }
     }
 }

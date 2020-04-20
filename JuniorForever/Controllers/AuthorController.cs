@@ -23,9 +23,16 @@ namespace JuniorForever.Controllers
         {
             try
             {
+                if(await authorRepository.ExistAuthorByName(author.Name))
+                {
+                    return Conflict("Autor já cadastrado!");
+                }
+
                 authorRepository.Add(author);
 
-                return Ok();
+                await authorRepository.SaveChangesAsync();
+                
+                return Ok("Autor cadastradado com sucesso!");
             }
             catch (Exception e)
             {
@@ -45,7 +52,7 @@ namespace JuniorForever.Controllers
                     return Ok(result);
                 }
 
-                var result2 = await authorRepository.GetbyNameAsync(filter);
+                var result2 = await authorRepository.GetAuthorsByNameAsync(filter);
 
                 return Ok(result2);
             }
@@ -60,7 +67,7 @@ namespace JuniorForever.Controllers
         {
             try
             {
-                var result = await authorRepository.GetbyIdAsync(id);
+                var result = await authorRepository.GetAuthorByIdAsync(id);
                 
                 return Ok(result);
 
@@ -76,7 +83,7 @@ namespace JuniorForever.Controllers
         {
             try
             {
-                var existAuthor = await authorRepository.GetbyIdAsync(author.Id);
+                var existAuthor = await authorRepository.GetAuthorByIdAsync(author.Id);
 
                 if (existAuthor == null)
                 {
@@ -101,7 +108,7 @@ namespace JuniorForever.Controllers
         {
             try
             {
-                var existAuthor = await authorRepository.GetbyIdAsync(author.Id);
+                var existAuthor = await authorRepository.GetAuthorByIdAsync(author.Id);
 
                 if (existAuthor == null)
                 {
