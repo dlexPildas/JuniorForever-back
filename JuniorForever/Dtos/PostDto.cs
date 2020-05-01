@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace JuniorForever.Dtos
+namespace JuniorForever.Api.Dtos
 {
     public class PostDto
     {

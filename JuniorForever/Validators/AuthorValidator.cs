@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using FluentValidation;
+﻿using FluentValidation;
 using JuniorForever.Domain.Models;
 
-namespace JuniorForever.Validators
+namespace JuniorForever.Api.Validators
 {
     public class AuthorValidator : AbstractValidator<Author>
     {

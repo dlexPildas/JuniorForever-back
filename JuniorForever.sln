@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuniorForever", "JuniorForever\JuniorForever.csproj", "{0B09F8F1-E0FC-4047-B095-DD3922A89C47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuniorForever.Api", "JuniorForever\JuniorForever.Api.csproj", "{0B09F8F1-E0FC-4047-B095-DD3922A89C47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuniorForever.Repository", "JuniorForever.Repository\JuniorForever.Repository.csproj", "{DD9678E3-98F5-428F-AFF6-837B2D4395C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuniorForever.Repository", "JuniorForever.Repository\JuniorForever.Repository.csproj", "{DD9678E3-98F5-428F-AFF6-837B2D4395C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuniorForever.Domain", "JuniorForever.Domain\JuniorForever.Domain.csproj", "{29799F52-F93A-44A8-A84A-00E0FA49F255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuniorForever.Domain", "JuniorForever.Domain\JuniorForever.Domain.csproj", "{29799F52-F93A-44A8-A84A-00E0FA49F255}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

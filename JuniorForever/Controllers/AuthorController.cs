@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
 using JuniorForever.Domain.Interfaces;
-using Microsoft.AspNetCore.Mvc;
-using  JuniorForever.Domain.Models;
+using JuniorForever.Domain.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
-namespace JuniorForever.Controllers
+namespace JuniorForever.Api.Controllers
 {
     [Route("authors")]
     [ApiController]

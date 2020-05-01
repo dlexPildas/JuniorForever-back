@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
+using JuniorForever.Api.Dtos;
 using JuniorForever.Domain.Models;
-using JuniorForever.Dtos;
 
-namespace JuniorForever.Helpers
+namespace JuniorForever.Api.Helpers
 {
     public class ApiProfile : Profile
     {

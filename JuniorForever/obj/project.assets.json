@@ -8444,9 +8444,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever\\JuniorForever.csproj",
-      "projectName": "JuniorForever",
-      "projectPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever\\JuniorForever.csproj",
+      "projectUniqueName": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever\\JuniorForever.Api.csproj",
+      "projectName": "JuniorForever.Api",
+      "projectPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever\\JuniorForever.Api.csproj",
       "packagesPath": "C:\\Users\\daniel.lima\\.nuget\\packages\\",
       "outputPath": "C:\\JuniorForever\\JuniorForever-back\\JuniorForever\\obj\\",
       "projectStyle": "PackageReference",
