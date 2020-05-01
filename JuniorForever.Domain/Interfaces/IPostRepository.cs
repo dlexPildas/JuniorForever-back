@@ -6,5 +6,6 @@ namespace JuniorForever.Domain.Interfaces
     public interface IPostRepository : IRepository
     {
         Task<Post[]> GetAllPostsAsync();
+        Task<Post> GetPostById(int id);
     }
 }

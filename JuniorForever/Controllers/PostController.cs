@@ -24,9 +24,24 @@ namespace JuniorForever.Controllers
         {
             try
             {
-                var result = await postRepository.GetAllPostsAsync();
+                var posts = await postRepository.GetAllPostsAsync();
 
-                return Ok(result);
+                return Ok(posts);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            try
+            {
+                var post = await postRepository.GetPostById(id);
+
+                return Ok(post);
             }
             catch (Exception e)
             {
@@ -44,6 +59,54 @@ namespace JuniorForever.Controllers
                 await postRepository.SaveChangesAsync();
 
                 return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(Post post)
+        {
+            try
+            {
+                var existPost = await postRepository.GetPostById(post.Id);
+
+                if (existPost != null)
+                {
+                    postRepository.Update(post);
+
+                    await postRepository.SaveChangesAsync();
+
+                    return Ok("Post atualizado com sucesso");
+                }
+
+                return NotFound("O post não foi encontrado");
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                var existPost = await postRepository.GetPostById(id);
+
+                if (existPost != null)
+                {
+                    postRepository.Delete(existPost);
+
+                    await postRepository.SaveChangesAsync();
+
+                    return Ok("Post deletado com sucesso!");
+                }
+
+                return NotFound("O post não foi encontrado");
             }
             catch (Exception e)
             {

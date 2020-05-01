@@ -1,3 +1,4 @@
+using AutoMapper;
 using FluentValidation.AspNetCore;
 using JuniorForever.Domain.Interfaces;
 using JuniorForever.Repository;
@@ -31,9 +32,13 @@ namespace JuniorForever
             services.AddDbContext<DataContext>(
                 x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
             );
+
+            services.AddAutoMapper(GetType().Assembly);
+
             services.AddScoped<IRepository, Repository.Repository>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
             services.AddScoped<IPostRepository, PostRepository>();
+            services.AddScoped<IRatingRepository, RatingRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +50,8 @@ namespace JuniorForever
             }
 
             app.UseRouting();
+
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
             app.UseAuthorization();
 

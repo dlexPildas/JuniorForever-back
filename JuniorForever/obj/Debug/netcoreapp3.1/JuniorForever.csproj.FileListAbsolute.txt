@@ -127,13 +127,6 @@ C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\Junior
 C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
 C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\JuniorForever\JuniorForever\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.csprojAssemblyReference.cache
-C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\staticwebassets\JuniorForever.StaticWebAssets.Manifest.cache
-C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\staticwebassets\JuniorForever.StaticWebAssets.xml
-C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.AssemblyInfoInputs.cache
-C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.AssemblyInfo.cs
-C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.dll
-C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.pdb
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\appsettings.json
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -143,6 +136,9 @@ C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\Junior
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\JuniorForever.runtimeconfig.dev.json
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\JuniorForever.dll
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\JuniorForever.pdb
+C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -253,10 +249,16 @@ C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\Junior
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\JuniorForever.Repository.dll
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\JuniorForever.Domain.pdb
 C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\JuniorForever.Repository.pdb
+C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.csprojAssemblyReference.cache
+C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\staticwebassets\JuniorForever.StaticWebAssets.Manifest.cache
+C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\staticwebassets\JuniorForever.StaticWebAssets.xml
+C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.AssemblyInfoInputs.cache
+C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.AssemblyInfo.cs
 C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.RazorTargetAssemblyInfo.cache
 C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.csproj.CopyComplete
-C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\FluentValidation.dll
-C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
-C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.dll
+C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.pdb
+C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\JuniorForever\JuniorForever-back\JuniorForever\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.MvcApplicationPartsAssemblyInfo.cs
 C:\JuniorForever\JuniorForever-back\JuniorForever\obj\Debug\netcoreapp3.1\JuniorForever.MvcApplicationPartsAssemblyInfo.cache

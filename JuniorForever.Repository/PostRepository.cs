@@ -20,9 +20,19 @@ namespace JuniorForever.Repository
 
         public async Task<Post[]> GetAllPostsAsync()
         {
-            IQueryable<Post> query = dataContext.Posts;
+            IQueryable<Post> query = dataContext.Posts
+                .Include(x => x.Author)
+                .Include(x => x.Ratings)
+                .ThenInclude(x => x.Author);
 
             return await query.ToArrayAsync();
+        }
+
+        public async Task<Post> GetPostById(int id)
+        {
+            IQueryable<Post> query = dataContext.Posts;
+
+            return await query.FirstOrDefaultAsync(x => x.Id == id);
         }
     }
 }

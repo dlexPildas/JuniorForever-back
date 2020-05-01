@@ -12,6 +12,5 @@ namespace JuniorForever.Domain.Models
         public string Bio { get; set; }
         public string AvatarUrl { get; set; }
         public AuthorType AuthorType { get; set; }
-        public List<Post> Posts { get; set; }
     }
 }

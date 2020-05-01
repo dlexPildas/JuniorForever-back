@@ -9,8 +9,8 @@ C:\Users\daniel.lima\Documents\Estudos\Project Blog JuniorForever\BackEnd\Junior
 C:\JuniorForever\JuniorForever-back\JuniorForever.Domain\bin\Debug\netcoreapp3.1\JuniorForever.Domain.deps.json
 C:\JuniorForever\JuniorForever-back\JuniorForever.Domain\bin\Debug\netcoreapp3.1\JuniorForever.Domain.dll
 C:\JuniorForever\JuniorForever-back\JuniorForever.Domain\bin\Debug\netcoreapp3.1\JuniorForever.Domain.pdb
-C:\JuniorForever\JuniorForever-back\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.csprojAssemblyReference.cache
 C:\JuniorForever\JuniorForever-back\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.AssemblyInfoInputs.cache
 C:\JuniorForever\JuniorForever-back\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.AssemblyInfo.cs
 C:\JuniorForever\JuniorForever-back\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.dll
 C:\JuniorForever\JuniorForever-back\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.pdb
+C:\JuniorForever\JuniorForever-back\JuniorForever.Domain\obj\Debug\netcoreapp3.1\JuniorForever.Domain.csprojAssemblyReference.cache
