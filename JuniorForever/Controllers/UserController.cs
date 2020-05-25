@@ -81,6 +81,11 @@ namespace JuniorForever.Api.Controllers
             {
                 var user = await userManager.FindByNameAsync(userLoginDto.UserName);
 
+                if (user == null)
+                {
+                    return StatusCode(StatusCodes.Status404NotFound, "Usuário não foi encontrado");
+                }
+
                 var result = await signInManager.CheckPasswordSignInAsync(user, userLoginDto.Password, false);
 
                 if (result.Succeeded)
@@ -97,7 +102,7 @@ namespace JuniorForever.Api.Controllers
                     });
                 }
 
-                return Unauthorized();
+                return Unauthorized("Usuário não encontrado!");
             }
             catch (Exception e)
             {
