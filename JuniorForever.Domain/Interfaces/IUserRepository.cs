@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using JuniorForever.Domain.Identity;
+﻿using JuniorForever.Domain.Identity;
+using System.Threading.Tasks;
 
 namespace JuniorForever.Domain.Interfaces
 {

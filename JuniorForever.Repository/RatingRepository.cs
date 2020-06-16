@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using JuniorForever.Domain.Interfaces;
+﻿using JuniorForever.Domain.Interfaces;
 using JuniorForever.Domain.Models;
 using JuniorForever.Repository.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace JuniorForever.Repository
 {

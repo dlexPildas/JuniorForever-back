@@ -1,10 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-using JuniorForever.Domain.Interfaces;
+﻿using JuniorForever.Domain.Interfaces;
 using JuniorForever.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace JuniorForever.Api.Controllers
 {

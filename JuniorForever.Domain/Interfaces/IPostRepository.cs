@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using JuniorForever.Domain.Models;
+﻿using JuniorForever.Domain.Models;
+using System.Threading.Tasks;
 
 namespace JuniorForever.Domain.Interfaces
 {
@@ -7,5 +7,6 @@ namespace JuniorForever.Domain.Interfaces
     {
         Task<Post[]> GetAllPostsAsync();
         Task<Post> GetPostById(int id);
+        Task<Post> GetPostByTitleAsync(string title);
     }
 }

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net.Mime;
-using System.Text;
 
 namespace JuniorForever.Domain.Models
 {

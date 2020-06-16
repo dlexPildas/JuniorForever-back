@@ -1,4 +1,3 @@
-using System.Text;
 using AutoMapper;
 using FluentValidation.AspNetCore;
 using JuniorForever.Domain.Identity;
@@ -16,6 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace JuniorForever.Api
 {
@@ -36,7 +36,7 @@ namespace JuniorForever.Api
                 {
                     options.RegisterValidatorsFromAssemblyContaining<Startup>();
                 });
-            
+
             services.AddDbContext<DataContext>(
                 x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
             );
@@ -48,7 +48,7 @@ namespace JuniorForever.Api
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
-                options.Password.RequireNonAlphanumeric  = false;
+                options.Password.RequireNonAlphanumeric = false;
 
             });
 

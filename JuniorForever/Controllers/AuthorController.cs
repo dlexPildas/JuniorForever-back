@@ -1,10 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-using JuniorForever.Domain.Interfaces;
+﻿using JuniorForever.Domain.Interfaces;
 using JuniorForever.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace JuniorForever.Api.Controllers
 {
@@ -24,7 +24,7 @@ namespace JuniorForever.Api.Controllers
         {
             try
             {
-                if(await authorRepository.ExistAuthorByName(author.Name))
+                if (await authorRepository.ExistAuthorByName(author.Name))
                 {
                     return Conflict("Autor já cadastrado!");
                 }
@@ -32,14 +32,14 @@ namespace JuniorForever.Api.Controllers
                 authorRepository.Add(author);
 
                 await authorRepository.SaveChangesAsync();
-                
+
                 return Ok("Autor cadastradado com sucesso!");
             }
             catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, $"{e.Message}");
             }
-            
+
         }
 
         [HttpGet]
@@ -70,9 +70,24 @@ namespace JuniorForever.Api.Controllers
             try
             {
                 var result = await authorRepository.GetAuthorByIdAsync(id);
-                
+
                 return Ok(result);
 
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAuthorByName(string name)
+        {
+            try
+            {
+                var author = await authorRepository.GetAuthorByNameAsync(name);
+
+                return Ok(author);
             }
             catch (Exception e)
             {
@@ -102,7 +117,7 @@ namespace JuniorForever.Api.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
-            
+
         }
 
         [HttpDelete]

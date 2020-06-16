@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using JuniorForever.Domain.Models;
 using System.Threading.Tasks;
-using JuniorForever.Domain.Models;
 
 namespace JuniorForever.Domain.Interfaces
 {
@@ -10,5 +9,7 @@ namespace JuniorForever.Domain.Interfaces
         Task<Author[]> GetAuthorsByNameAsync(string name);
         Task<Author> GetAuthorByIdAsync(int id);
         Task<bool> ExistAuthorByName(string name);
+        Task<int> GetIdAuthorByUserId(int idUser);
+        Task<Author> GetAuthorByNameAsync(string name);
     }
 }

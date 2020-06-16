@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using JuniorForever.Api.Dtos;
 using JuniorForever.Domain.Identity;
 using JuniorForever.Domain.Interfaces;
+using JuniorForever.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -16,6 +10,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace JuniorForever.Api.Controllers
 {
@@ -28,14 +28,16 @@ namespace JuniorForever.Api.Controllers
         private readonly SignInManager<User> signInManager;
         private readonly IMapper mapper;
         private readonly IUserRepository userRepository;
+        private readonly IAuthorRepository authorRepository;
 
-        public UserController(IConfiguration configuration, UserManager<User> userManager, SignInManager<User> signInManager, IMapper mapper, IUserRepository userRepository)
+        public UserController(IConfiguration configuration, UserManager<User> userManager, SignInManager<User> signInManager, IMapper mapper, IUserRepository userRepository, IAuthorRepository authorRepository)
         {
             this.configuration = configuration;
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.mapper = mapper;
             this.userRepository = userRepository;
+            this.authorRepository = authorRepository;
         }
 
         [HttpGet]
@@ -53,19 +55,26 @@ namespace JuniorForever.Api.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Post(UserDto userDto)
+        public async Task<IActionResult> Post(UserAuthorDto userAuthorDto)
         {
             try
             {
-                var user = mapper.Map<User>(userDto);
+                var user = mapper.Map<User>(userAuthorDto.UserDto);
 
-                var result = await userManager.CreateAsync(user, userDto.Password);
+                var result = await userManager.CreateAsync(user, userAuthorDto.UserDto.Password);
 
                 if (result.Succeeded)
                 {
+                    var author = mapper.Map<Author>(userAuthorDto.AuthorDto);
+                    author.User = user;
+
+                    authorRepository.Add(author);
+
+                    await authorRepository.SaveChangesAsync();
+
                     return StatusCode(StatusCodes.Status201Created, "Usuário criado com sucesso!");
                 }
-                return StatusCode(StatusCodes.Status500InternalServerError, result.Errors);
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao cadastrar usuário");
             }
             catch (Exception e)
             {
@@ -86,6 +95,8 @@ namespace JuniorForever.Api.Controllers
                     return StatusCode(StatusCodes.Status404NotFound, "Usuário não foi encontrado");
                 }
 
+                var authorId = await authorRepository.GetIdAuthorByUserId(user.Id);
+
                 var result = await signInManager.CheckPasswordSignInAsync(user, userLoginDto.Password, false);
 
                 if (result.Succeeded)
@@ -98,7 +109,8 @@ namespace JuniorForever.Api.Controllers
                     return Ok(new
                     {
                         token = GenerateJWToken(appUser).Result,
-                        user = userToReturn
+                        user = userToReturn,
+                        authorId = authorId
                     });
                 }
 

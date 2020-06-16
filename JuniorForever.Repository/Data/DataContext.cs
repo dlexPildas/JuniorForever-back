@@ -1,16 +1,16 @@
 ﻿using JuniorForever.Domain.Identity;
-using Microsoft.EntityFrameworkCore;
 using JuniorForever.Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 namespace JuniorForever.Repository.Data
 {
     public class DataContext : IdentityDbContext<
-        User, Role, int, IdentityUserClaim<int>, 
-        UserRole, IdentityUserLogin<int>, IdentityRoleClaim<int>, 
+        User, Role, int, IdentityUserClaim<int>,
+        UserRole, IdentityUserLogin<int>, IdentityRoleClaim<int>,
         IdentityUserToken<int>>
     {
-        public DataContext(DbContextOptions<DataContext> options) : base(options) {}
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<Author> Authors { get; set; }
 
@@ -24,7 +24,7 @@ namespace JuniorForever.Repository.Data
 
             builder.Entity<UserRole>(userRole =>
             {
-                userRole.HasKey(ur => new {ur.UserId, ur.RoleId});
+                userRole.HasKey(ur => new { ur.UserId, ur.RoleId });
 
                 userRole.HasOne(ur => ur.Role)
                     .WithMany(r => r.UserRoles)

@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using JuniorForever.Domain.Interfaces;
+﻿using JuniorForever.Domain.Interfaces;
 using JuniorForever.Repository.Data;
+using System.Threading.Tasks;
 
 namespace JuniorForever.Repository
 {

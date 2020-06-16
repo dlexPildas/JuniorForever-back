@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace JuniorForever.Domain.Models
+﻿namespace JuniorForever.Domain.Models
 {
     public class Rating
     {

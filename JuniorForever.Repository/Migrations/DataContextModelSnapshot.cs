@@ -149,7 +149,12 @@ namespace JuniorForever.Repository.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Authors");
                 });
@@ -307,6 +312,15 @@ namespace JuniorForever.Repository.Migrations
 
                     b.HasOne("JuniorForever.Domain.Identity.User", "User")
                         .WithMany("UserRoles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("JuniorForever.Domain.Models.Author", b =>
+                {
+                    b.HasOne("JuniorForever.Domain.Identity.User", "User")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
