@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuniorForever.Repository", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuniorForever.Domain", "JuniorForever.Domain\JuniorForever.Domain.csproj", "{29799F52-F93A-44A8-A84A-00E0FA49F255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuniorForever.Test", "JuniorForever.Test\JuniorForever.Test.csproj", "{03E14D6D-ABB6-4AAB-BEA3-DDE98B101650}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuniorForever.Test", "JuniorForever.Test\JuniorForever.Test.csproj", "{03E14D6D-ABB6-4AAB-BEA3-DDE98B101650}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
