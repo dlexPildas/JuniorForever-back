@@ -50,6 +50,22 @@ namespace JuniorForever.Api.Controllers
             }
         }
 
+        [HttpGet("{title}/title")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Get(string title)
+        {
+            try
+            {
+                var post = await postRepository.GetPostByTitleAsync(title);
+
+                return Ok(post);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> Post(Post post)
         {
